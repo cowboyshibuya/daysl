@@ -15,13 +15,12 @@ struct ContentView: View {
     var body: some View {
         Group {
             if let profile = profiles.first {
-                // MainView
+                 MainView(profile: profile)
             } else {
-                // SetUpProfileView()
+                 SetUpProfileView()
             }
         }
     }
-
 
 //    private func deleteItems(offsets: IndexSet) {
 //        withAnimation {

@@ -17,19 +17,25 @@ struct MainView: View {
     }
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("Time left before you're \(profile.targetAge) years old:")
-                Text(formatTime(timeRemaining))
+            ZStack {
+                BackgroundView()
+                VStack {
+                    Text("Time left before you're \(profile.targetAge) years old:")
+                    Text(formatTime(timeRemaining))
                         .font(.largeTitle)
                         .monospacedDigit()
-            } // VStack
-            .padding()
-            .onAppear {
-                startTimer(to: targetDate)
-            }
-            .onDisappear {
-                timer?.invalidate()
-            }
+                        .padding(30)
+                        .glass(cornerRadius: 20)
+                } // VStack
+                
+               
+                .onAppear {
+                    startTimer(to: targetDate)
+                }
+                .onDisappear {
+                    timer?.invalidate()
+                }
+            } // Zstack
         } // NavStack
     }
     

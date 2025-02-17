@@ -16,33 +16,48 @@ struct SetUpProfileView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("When were you born ?")
-                    .font(.title2)
-                    .fontWeight(.semibold)
-                Text("It will help us to to...")
-                    .foregroundStyle(.secondary)
-                
-                DatePicker("Birthdate", selection: $selectedDate, in: ...Date(), displayedComponents: .date)
-                    .datePickerStyle(.wheel)
-                    .onChange(of: selectedDate) {
-                        isDateSelected = true
-                    }
-                
-                Button(action: setUpProfile) {
-                    HStack {
-                        Spacer()
-                        Text("Continue")
-                        Image(systemName: "arrow.right")
-                        Spacer()
+            ZStack {
+                BackgroundView()
+                VStack {
+                    Spacer()
+                    
+                    VStack {
+                        Text("Select your birthdate")
+                            .font(.title)
+                            .fontWeight(.semibold)
+                        Text("To set up a countdown")
+                            .foregroundStyle(.secondary)
+                        DatePicker("Birthdate", selection: $selectedDate, in: ...Date(), displayedComponents: .date)
+                            .datePickerStyle(.wheel)
+                            .onChange(of: selectedDate) {
+                                isDateSelected = true
+                            }
+                            .labelsHidden()
                     }
                     .padding()
-                    .background(RoundedRectangle(cornerRadius: 15).fill(.black))
-                    .foregroundStyle(.white)
-                    .padding()
-                }
-            } // VStack
-            .padding()
+                    .glass(cornerRadius: 20)
+                    
+                    Spacer()
+                    
+                    Button(action: setUpProfile) {
+                        HStack {
+                            Spacer()
+                            Text("Continue")
+                            Image(systemName: "arrow.right")
+                            Spacer()
+                        }
+                        .padding()
+                        .background(RoundedRectangle(cornerRadius: 15).fill(.black))
+                        .foregroundStyle(.white)
+                        .padding()
+                    }
+                } // VStack
+                .padding()
+                
+                
+                .navigationTitle("Set up your profile")
+            } // ZStack
+            
         } // NavStack
     }
     
