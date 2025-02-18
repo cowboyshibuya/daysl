@@ -15,20 +15,27 @@ struct MainView: View {
     private var targetDate: Date {
         Calendar.current.date(byAdding: .year, value: profile.targetAge, to: profile.birthdate) ?? profile.birthdate
     }
+    
+    // filter properties
+    @AppStorage("displayDates") private var displayDates = true
+    
     var body: some View {
         NavigationStack {
             ZStack {
                 BackgroundView()
                 VStack {
+                    Spacer()
+                    
                     Text("Time left before you're \(profile.targetAge) years old:")
                     Text(formatTime(timeRemaining))
                         .font(.largeTitle)
                         .monospacedDigit()
                         .padding(30)
                         .glass(cornerRadius: 20)
+                    
+                    Spacer()
+                    footer
                 } // VStack
-                
-               
                 .onAppear {
                     startTimer(to: targetDate)
                 }
@@ -36,6 +43,17 @@ struct MainView: View {
                     timer?.invalidate()
                 }
             } // Zstack
+            .navigationTitle("daysl")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                Menu {
+                    Toggle("Display dates", isOn: $displayDates)
+                    NavigationLink("Settings", destination: {})
+                    
+                } label: {
+                    Image(systemName: "ellipsis")
+                }
+            }
         } // NavStack
     }
     
