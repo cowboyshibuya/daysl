@@ -82,6 +82,8 @@ struct SettingsView: View {
     }
 }
 
+
+
 #Preview {
     let previewBirthdate = Calendar.current.date(byAdding: .year, value: -20, to: .now)
     let previewProfile = Profile(birthdate: previewBirthdate ?? Date())
