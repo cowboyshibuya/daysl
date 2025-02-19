@@ -11,102 +11,74 @@ struct SettingsView: View {
     @Environment(\.modelContext) private var context
     let profile: Profile
     
-    @State private var selectedDate = Date()
-    @State private var enableNotifications = true
+    // sheet properties
+    @State private var showBackgroundColorSelectionSheet: Bool = false
+
     var body: some View {
         NavigationStack {
             ZStack {
                 BackgroundView()
-                VStack {
-                    infoSection
+                VStack(spacing: 20) {
+                    // TODO
+                    // Random quotes about time
+                    Text("Don't lose this precious time by scrolling your feed !")
+                        .padding()
+
+                    VStack(spacing: 20) {
+                        Text("🎯\(profile.targetAge) years old")
+                            .font(.headline)
+                            .padding()
+                        //TODO: Random picture here
+                        Image("selfie")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 250, height: 250)
+                        
+                        VStack(spacing: 5) {
+                            //TODO: Store user name
+                            Text("Spike, \(profile.age)")
+                                .font(.title2).bold()
+                            Text("Born on **\(profile.birthdate.formatted(date: .abbreviated, time: .omitted))**").foregroundStyle(.secondary)
+                        }
+                    }
+                    .padding()
+                    .glass(cornerRadius: 50)
                     
-                    appSection
+                    VStack(spacing: 20) {
+                        HStack {
+                            DefaultButton(icon: "paintpalette.fill", title: "Background", action: {})
+                            DefaultButton(icon: "pencil", action: {})
+                        }
+                        DefaultButton(icon: "laptopcomputer", title: "Visit our website", action: {})
+
+                    }
+                    Spacer()
                     
-                    aboutSection
+                    VStack(spacing: 15) {
+                        // Trust & Security
+                        Button("Trust and Security") {}
+                            .bold()
+                        // Contact US
+                        Button("Contact Us"){}
+                            .bold()
+                    }
                 }
                 .padding()
             } // ZStack
             .navigationTitle("Settings")
-        } // NavStack
-    }
-    
-    private var infoSection: some View {
-        VStack(alignment: .leading, spacing: 30) {
-            HStack {
-                Text("Your information")
-                    .font(.headline)
-                    .foregroundStyle(.secondary)
-                Spacer()
-                Button("Edit") {
-                    
-                }
-                .padding(.horizontal, 10)
-                .padding(.vertical, 3)
-                .background(Capsule().fill(.black.opacity(0.1)))
-            }
-            HStack {
-                Image(systemName: "calendar")
-                Text("Birthdate")
-                Spacer()
-                Menu("\(profile.birthdate.formatted(date: .abbreviated, time: .omitted))") {
-                    
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                Menu {
+                    Button("Report a bug") {}
+                    Button("Delete", role: .destructive) {}
+                } label: {
+                    Image(systemName: "ellipsis")
                 }
             }
-            HStack {
-                Text("🧓")
-                Text("Target Age")
-                Spacer()
-                Text("\(profile.targetAge)")
-                    .foregroundStyle(.secondary)
-                    .fontWeight(.semibold)
+            .sheet(isPresented: $showBackgroundColorSelectionSheet) {
                 
             }
-        } // VStack
-        .padding()
-        .glass(cornerRadius: 20)
-    }
-    
-    private var appSection: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            HStack {
-                Text("App")
-                    .font(.headline)
-                    .foregroundStyle(.secondary)
-                Spacer()
-            } // HStack
-            
-            HStack {
-                Text("🔔")
-                Text("Enable notifications")
-                Spacer()
-                Toggle("Enable Notifications", isOn: $enableNotifications)
-                    .labelsHidden()
-            }
-        } // VStack
-        .padding()
-        .glass(cornerRadius: 20)
-    }
-    
-    private var aboutSection: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text("About")
-                .font(.headline)
-                .foregroundStyle(.secondary)
-            
-            List {
-                NavigationLink(destination: {}) {
-                    HStack {
-                        Text("🪲")
-                        Text("Report a bug")
-                    }
-                }
-                .listRowBackground(Color.clear)
-                .listRowSeparator(.hidden)
-            }
-            .listStyle(.plain)
-        } // VStack
-        .padding()
-        .glass(cornerRadius: 20)
+        } // NavStack
     }
 }
 

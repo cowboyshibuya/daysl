@@ -12,6 +12,9 @@ import SwiftData
 final class Profile {
     var birthdate: Date
     var targetAge: Int
+    var age: Int {
+        Calendar.current.component(.year, from: Date()) - Calendar.current.component(.year, from: birthdate)
+    }
     
     init(birthdate: Date, targetAge: Int = 85) {
         self.birthdate = birthdate
