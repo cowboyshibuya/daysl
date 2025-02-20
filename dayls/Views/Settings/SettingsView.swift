@@ -14,6 +14,8 @@ struct SettingsView: View {
     // sheet properties
     @State private var showBackgroundColorSelectionSheet: Bool = false
     @State private var showEditProfileSheet: Bool = false
+    
+    @State private var showResetAlert = false
 
     var body: some View {
         NavigationStack {
@@ -73,7 +75,9 @@ struct SettingsView: View {
             .toolbar {
                 Menu {
                     Button("Report a bug") {}
-                    Button("Delete", role: .destructive) {}
+                    Button("Reset", role: .destructive) {
+                        resetProfile()
+                    }
                 } label: {
                     Image(systemName: "ellipsis")
                 }
@@ -84,7 +88,21 @@ struct SettingsView: View {
             .sheet(isPresented: $showEditProfileSheet) {
                 EditProfileView(profile: profile)
             }
+            .alert("Reset App", isPresented: $showResetAlert) {
+                Button("Reset", role: .destructive) {
+                    withAnimation {
+                        context.delete(profile)
+                    }
+                }
+                Button("Cancel", role: .cancel) {}
+            } message: {
+                Text("Are you sure you want to reset your profile? All your informations will be cleared.")
+            }
         } // NavStack
+    }
+    
+    private func resetProfile() {
+        showResetAlert = true
     }
 }
 
