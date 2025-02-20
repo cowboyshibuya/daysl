@@ -13,6 +13,7 @@ struct SettingsView: View {
     
     // sheet properties
     @State private var showBackgroundColorSelectionSheet: Bool = false
+    @State private var showEditProfileSheet: Bool = false
 
     var body: some View {
         NavigationStack {
@@ -36,7 +37,7 @@ struct SettingsView: View {
                         
                         VStack(spacing: 5) {
                             //TODO: Store user name
-                            Text("Spike, \(profile.age)")
+                            Text("\(profile.name), \(profile.age)")
                                 .font(.title2).bold()
                             Text("Born on **\(profile.birthdate.formatted(date: .abbreviated, time: .omitted))**").foregroundStyle(.secondary)
                         }
@@ -47,7 +48,9 @@ struct SettingsView: View {
                     VStack(spacing: 20) {
                         HStack {
                             DefaultButton(icon: "paintpalette.fill", title: "Background", action: {})
-                            DefaultButton(icon: "pencil", action: {})
+                            DefaultButton(icon: "pencil", action: {
+                                showEditProfileSheet.toggle()
+                            })
                         }
                         DefaultButton(icon: "laptopcomputer", title: "Visit our website", action: {})
 
@@ -78,6 +81,69 @@ struct SettingsView: View {
             .sheet(isPresented: $showBackgroundColorSelectionSheet) {
                 
             }
+            .sheet(isPresented: $showEditProfileSheet) {
+                EditProfileView(profile: profile)
+            }
+        } // NavStack
+    }
+}
+
+struct EditProfileView: View {
+    @Environment(\.dismiss) private var dismiss
+    @Environment(\.modelContext) private var context
+    let profile: Profile
+    
+    // form properties
+    @State private var name = ""
+    @State private var targetAge: Int = 0
+    @State private var selectedDate = Date()
+    
+    var body: some View {
+        NavigationStack {
+            ZStack {
+                BackgroundView()
+                Color.black.opacity(0.5)
+                    .ignoresSafeArea()
+                
+                VStack(alignment: .leading) {
+                    Text("🙋 Name").font(.headline).foregroundStyle(.secondary)
+                    TextField("Name", text: $name)
+                        .padding()
+                        .glass(cornerRadius: 20)
+                    
+                    Text("🎯 Target Age")
+                        .font(.headline).foregroundStyle(.secondary)
+                    TextField("Target Age", value: $targetAge, format: .number)
+                    .padding()
+                    .glass(cornerRadius: 20)
+                    
+                    Text("🥳 Birthdate").font(.headline).foregroundStyle(.secondary)
+                    HStack {
+                        Spacer()
+                        DatePicker("Birthdate", selection: $selectedDate, in: ...Date(), displayedComponents: .date)
+                            .labelsHidden()
+                            .datePickerStyle(.wheel)
+                        Spacer()
+                    }
+                } // VStack
+                .padding()
+            } // ZStack
+            .onAppear {
+                name = profile.name
+                targetAge = profile.targetAge
+                selectedDate = profile.birthdate
+            }
+            .navigationTitle("Edit Information")
+            .toolbar {
+                Button("Done") {
+                    if targetAge > 0 && targetAge > profile.age {
+                        profile.name = name
+                        profile.birthdate = selectedDate
+                        profile.targetAge = targetAge
+                    }
+                    dismiss()
+                }
+            }
         } // NavStack
     }
 }
@@ -86,6 +152,6 @@ struct SettingsView: View {
 
 #Preview {
     let previewBirthdate = Calendar.current.date(byAdding: .year, value: -20, to: .now)
-    let previewProfile = Profile(birthdate: previewBirthdate ?? Date())
+    let previewProfile = Profile(name: "Spike", birthdate: previewBirthdate ?? Date())
     SettingsView(profile: previewProfile)
 }
