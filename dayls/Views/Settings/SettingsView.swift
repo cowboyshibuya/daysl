@@ -105,28 +105,30 @@ struct EditProfileView: View {
                 Color.black.opacity(0.5)
                     .ignoresSafeArea()
                 
-                VStack(alignment: .leading) {
-                    Text("🙋 Name").font(.headline).foregroundStyle(.secondary)
-                    TextField("Name", text: $name)
-                        .padding()
-                        .glass(cornerRadius: 20)
-                    
-                    Text("🎯 Target Age")
-                        .font(.headline).foregroundStyle(.secondary)
-                    TextField("Target Age", value: $targetAge, format: .number)
+                ScrollView(.vertical, showsIndicators: false) {
+                    VStack(alignment: .leading) {
+                        Text("🙋 Name").font(.headline).foregroundStyle(.secondary)
+                        TextField("Name", text: $name)
+                            .padding()
+                            .glass(cornerRadius: 20)
+                        
+                        Text("🎯 Target Age")
+                            .font(.headline).foregroundStyle(.secondary)
+                        TextField("Target Age", value: $targetAge, format: .number)
+                            .padding()
+                            .glass(cornerRadius: 20)
+                        
+                        Text("🥳 Birthdate").font(.headline).foregroundStyle(.secondary)
+                        HStack {
+                            Spacer()
+                            DatePicker("Birthdate", selection: $selectedDate, in: ...Date(), displayedComponents: .date)
+                                .labelsHidden()
+                                .datePickerStyle(.compact)
+                            Spacer()
+                        }
+                    } // VStack
                     .padding()
-                    .glass(cornerRadius: 20)
-                    
-                    Text("🥳 Birthdate").font(.headline).foregroundStyle(.secondary)
-                    HStack {
-                        Spacer()
-                        DatePicker("Birthdate", selection: $selectedDate, in: ...Date(), displayedComponents: .date)
-                            .labelsHidden()
-                            .datePickerStyle(.wheel)
-                        Spacer()
-                    }
-                } // VStack
-                .padding()
+                }
             } // ZStack
             .onAppear {
                 name = profile.name

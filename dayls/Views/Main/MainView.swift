@@ -46,12 +46,8 @@ struct MainView: View {
             .navigationTitle("daysl")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                Menu {
-                    Toggle("Display dates", isOn: $displayDates)
-                    NavigationLink("Settings", destination: {})
-                    
-                } label: {
-                    Image(systemName: "ellipsis")
+                NavigationLink(destination: SettingsView(profile: profile)) {
+                    Image(systemName: "gear")
                 }
             }
         } // NavStack
@@ -94,6 +90,6 @@ struct MainView: View {
 
 #Preview {
     let previewBirthdate = Calendar.current.date(byAdding: .year, value: -20, to: .now)
-    let previewProfile = Profile(birthdate: previewBirthdate ?? Date())
+    let previewProfile = Profile(name: "Spike", birthdate: previewBirthdate ?? Date())
     MainView(profile: previewProfile)
 }
