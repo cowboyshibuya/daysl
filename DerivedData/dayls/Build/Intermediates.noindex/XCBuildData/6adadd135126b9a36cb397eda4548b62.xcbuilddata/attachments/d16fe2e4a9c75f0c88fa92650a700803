@@ -1,0 +1,138 @@
+{
+  "" : {
+    "diagnostics" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/dayls-master.dia",
+    "emit-module-dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/dayls-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/dayls-master-emit-module.dia",
+    "swift-dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/dayls-master.swiftdeps"
+  },
+  "/Users/cowboyshibuya/Documents/Personal Projects/daysl/dayls/Models/Profile.swift" : {
+    "const-values" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Profile.swiftconstvalues",
+    "dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Profile.d",
+    "diagnostics" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Profile.dia",
+    "index-unit-output-path" : "/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Profile.o",
+    "llvm-bc" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Profile.bc",
+    "object" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Profile.o",
+    "swift-dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Profile.swiftdeps",
+    "swiftmodule" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Profile~partial.swiftmodule"
+  },
+  "/Users/cowboyshibuya/Documents/Personal Projects/daysl/dayls/Utils/Components/Background.swift" : {
+    "const-values" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Background.swiftconstvalues",
+    "dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Background.d",
+    "diagnostics" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Background.dia",
+    "index-unit-output-path" : "/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Background.o",
+    "llvm-bc" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Background.bc",
+    "object" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Background.o",
+    "swift-dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Background.swiftdeps",
+    "swiftmodule" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Background~partial.swiftmodule"
+  },
+  "/Users/cowboyshibuya/Documents/Personal Projects/daysl/dayls/Utils/Components/DefaultButton.swift" : {
+    "const-values" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/DefaultButton.swiftconstvalues",
+    "dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/DefaultButton.d",
+    "diagnostics" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/DefaultButton.dia",
+    "index-unit-output-path" : "/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/DefaultButton.o",
+    "llvm-bc" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/DefaultButton.bc",
+    "object" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/DefaultButton.o",
+    "swift-dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/DefaultButton.swiftdeps",
+    "swiftmodule" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/DefaultButton~partial.swiftmodule"
+  },
+  "/Users/cowboyshibuya/Documents/Personal Projects/daysl/dayls/Utils/Components/Footer.swift" : {
+    "const-values" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Footer.swiftconstvalues",
+    "dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Footer.d",
+    "diagnostics" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Footer.dia",
+    "index-unit-output-path" : "/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Footer.o",
+    "llvm-bc" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Footer.bc",
+    "object" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Footer.o",
+    "swift-dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Footer.swiftdeps",
+    "swiftmodule" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/Footer~partial.swiftmodule"
+  },
+  "/Users/cowboyshibuya/Documents/Personal Projects/daysl/dayls/Utils/Components/GlassView.swift" : {
+    "const-values" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/GlassView.swiftconstvalues",
+    "dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/GlassView.d",
+    "diagnostics" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/GlassView.dia",
+    "index-unit-output-path" : "/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/GlassView.o",
+    "llvm-bc" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/GlassView.bc",
+    "object" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/GlassView.o",
+    "swift-dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/GlassView.swiftdeps",
+    "swiftmodule" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/GlassView~partial.swiftmodule"
+  },
+  "/Users/cowboyshibuya/Documents/Personal Projects/daysl/dayls/Utils/Modifiers/GlassModifier.swift" : {
+    "const-values" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/GlassModifier.swiftconstvalues",
+    "dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/GlassModifier.d",
+    "diagnostics" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/GlassModifier.dia",
+    "index-unit-output-path" : "/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/GlassModifier.o",
+    "llvm-bc" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/GlassModifier.bc",
+    "object" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/GlassModifier.o",
+    "swift-dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/GlassModifier.swiftdeps",
+    "swiftmodule" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/GlassModifier~partial.swiftmodule"
+  },
+  "/Users/cowboyshibuya/Documents/Personal Projects/daysl/dayls/Views/ContentView.swift" : {
+    "const-values" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/cowboyshibuya/Documents/Personal Projects/daysl/dayls/Views/Main/MainView.swift" : {
+    "const-values" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/MainView.swiftconstvalues",
+    "dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/MainView.d",
+    "diagnostics" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/MainView.dia",
+    "index-unit-output-path" : "/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/MainView.o",
+    "llvm-bc" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/MainView.bc",
+    "object" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/MainView.o",
+    "swift-dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/MainView.swiftdeps",
+    "swiftmodule" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/MainView~partial.swiftmodule"
+  },
+  "/Users/cowboyshibuya/Documents/Personal Projects/daysl/dayls/Views/Profile/SetUpProfileView.swift" : {
+    "const-values" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SetUpProfileView-362081e0a0b7a8c91de3b0e873d6792a.swiftconstvalues",
+    "dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SetUpProfileView-362081e0a0b7a8c91de3b0e873d6792a.d",
+    "diagnostics" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SetUpProfileView-362081e0a0b7a8c91de3b0e873d6792a.dia",
+    "index-unit-output-path" : "/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SetUpProfileView-362081e0a0b7a8c91de3b0e873d6792a.o",
+    "llvm-bc" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SetUpProfileView-362081e0a0b7a8c91de3b0e873d6792a.bc",
+    "object" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SetUpProfileView-362081e0a0b7a8c91de3b0e873d6792a.o",
+    "swift-dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SetUpProfileView-362081e0a0b7a8c91de3b0e873d6792a.swiftdeps",
+    "swiftmodule" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SetUpProfileView-362081e0a0b7a8c91de3b0e873d6792a~partial.swiftmodule"
+  },
+  "/Users/cowboyshibuya/Documents/Personal Projects/daysl/dayls/Views/SetUp/SetUpProfileView.swift" : {
+    "const-values" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SetUpProfileView-bd0e4ecdbd38d81ccf724a0849055f62.swiftconstvalues",
+    "dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SetUpProfileView-bd0e4ecdbd38d81ccf724a0849055f62.d",
+    "diagnostics" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SetUpProfileView-bd0e4ecdbd38d81ccf724a0849055f62.dia",
+    "index-unit-output-path" : "/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SetUpProfileView-bd0e4ecdbd38d81ccf724a0849055f62.o",
+    "llvm-bc" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SetUpProfileView-bd0e4ecdbd38d81ccf724a0849055f62.bc",
+    "object" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SetUpProfileView-bd0e4ecdbd38d81ccf724a0849055f62.o",
+    "swift-dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SetUpProfileView-bd0e4ecdbd38d81ccf724a0849055f62.swiftdeps",
+    "swiftmodule" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SetUpProfileView-bd0e4ecdbd38d81ccf724a0849055f62~partial.swiftmodule"
+  },
+  "/Users/cowboyshibuya/Documents/Personal Projects/daysl/dayls/Views/Settings/BackgroundSelectionView.swift" : {
+    "const-values" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/BackgroundSelectionView.swiftconstvalues",
+    "dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/BackgroundSelectionView.d",
+    "diagnostics" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/BackgroundSelectionView.dia",
+    "index-unit-output-path" : "/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/BackgroundSelectionView.o",
+    "llvm-bc" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/BackgroundSelectionView.bc",
+    "object" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/BackgroundSelectionView.o",
+    "swift-dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/BackgroundSelectionView.swiftdeps",
+    "swiftmodule" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/BackgroundSelectionView~partial.swiftmodule"
+  },
+  "/Users/cowboyshibuya/Documents/Personal Projects/daysl/dayls/Views/Settings/SettingsView.swift" : {
+    "const-values" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/cowboyshibuya/Documents/Personal Projects/daysl/dayls/daylsApp.swift" : {
+    "const-values" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/daylsApp.swiftconstvalues",
+    "dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/daylsApp.d",
+    "diagnostics" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/daylsApp.dia",
+    "index-unit-output-path" : "/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/daylsApp.o",
+    "llvm-bc" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/daylsApp.bc",
+    "object" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/daylsApp.o",
+    "swift-dependencies" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/daylsApp.swiftdeps",
+    "swiftmodule" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/dayls.build/Debug-iphonesimulator/dayls.build/Objects-normal/arm64/daylsApp~partial.swiftmodule"
+  }
+}

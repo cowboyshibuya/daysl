@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8C188A1E868D88968FCAA073FA1107619459096E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8C188A1E868D88968FCAA073FA1107619459096E" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C3B4E319-F7A0-4E12-A7F6-6E2ED58D5806",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8C188A1E868D88968FCAA073FA1107619459096E" : "daysl\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "dayls",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "dayls.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git@github.com:cowboyshibuya\/daysl.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8C188A1E868D88968FCAA073FA1107619459096E"
+    }
+  ]
+}

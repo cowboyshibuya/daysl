@@ -1,0 +1,24 @@
+{
+  "source": "/Users/cowboyshibuya/Documents/Personal Projects/daysl/dayls/Views/Main/MainView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "daysl",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 46
+        }
+      },
+      {
+        "comment": "",
+        "key": "Time left before you're %lld years old:",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 29
+        }
+      }
+    ]
+  },
+  "version": 1
+}
