@@ -1,0 +1,64 @@
+{
+  "buildCommand" : {
+    "command" : "preview",
+    "style" : "xojit"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "ebf6d0b678c896d6187573a27ef931df330fad92030bcc767206832b31b1ffe4"
+    }
+  ],
+  "containerPath" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/dayls.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator18.2",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Products",
+      "derivedDataPath" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/cowboyshibuya/Documents/Personal Projects/daysl/DerivedData/dayls/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone17,1",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "18.2",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone17,1",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "YES",
+          "ONLY_ACTIVE_ARCH" : "YES",
+          "TARGET_DEVICE_IDENTIFIER" : "C30702D1-DAC4-4A42-8A1B-DFEBED26D48F",
+          "TARGET_DEVICE_MODEL" : "iPhone17,1",
+          "TARGET_DEVICE_OS_VERSION" : "18.2",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphonesimulator"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

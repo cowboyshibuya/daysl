@@ -10,9 +10,22 @@
 		03B844E72D63CA5800E27EBE /* dayls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dayls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		03A29E332D6D9D07008D7773 /* Exceptions for "dayls" folder in "dayls" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Views/Profile/SetUpProfileView.swift,
+			);
+			target = 03B844E62D63CA5800E27EBE /* dayls */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		03B844E92D63CA5800E27EBE /* dayls */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				03A29E332D6D9D07008D7773 /* Exceptions for "dayls" folder in "dayls" target */,
+			);
 			path = dayls;
 			sourceTree = "<group>";
 		};
@@ -54,7 +67,6 @@
 			buildPhases = (
 				03B844E32D63CA5800E27EBE /* Sources */,
 				03B844E42D63CA5800E27EBE /* Frameworks */,
-				03B844E52D63CA5800E27EBE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -103,16 +115,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		03B844E52D63CA5800E27EBE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		03B844E32D63CA5800E27EBE /* Sources */ = {
