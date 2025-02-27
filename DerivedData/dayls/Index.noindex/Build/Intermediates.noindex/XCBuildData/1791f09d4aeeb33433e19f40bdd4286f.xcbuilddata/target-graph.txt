@@ -1,3 +1,0 @@
-Target dependency graph (2 targets)
-Target 'dayls' in project 'dayls' (no dependencies)
-Target 'dayls' in project 'dayls' (no dependencies)
