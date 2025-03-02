@@ -19,23 +19,33 @@ struct MainView: View {
     // filter properties
     @AppStorage("displayDates") private var displayDates = true
     
+    @State private var selectedFormat : Int = 0
+    
     var body: some View {
         NavigationStack {
             ZStack {
                 BackgroundView()
                 VStack {
                     Spacer()
-                    
+                    // TODO: SET A FIXED VSTACK FOR GLASS VIEW
                     Text("Time left before you're \(profile.targetAge) years old:")
-                    Text(formatTime(timeRemaining))
+                    Text(formatTime(timeRemaining, selectedFormat: selectedFormat))
                         .font(.largeTitle)
                         .monospacedDigit()
                         .padding(30)
                         .glass(cornerRadius: 20)
+                        .onTapGesture {
+                            if selectedFormat < 3 {
+                                selectedFormat += 1
+                            } else {
+                                selectedFormat = 0
+                            }
+                        }
                     
                     Spacer()
                     footer
                 } // VStack
+                .padding()
                 .onAppear {
                     startTimer(to: targetDate)
                 }
@@ -49,7 +59,6 @@ struct MainView: View {
                 NavigationLink(destination: SettingsView(profile: profile)) {
                     Image(systemName: "gear")
                 }
-                .foregroundStyle(.white)
             }
         } // NavStack
     }
@@ -73,7 +82,7 @@ struct MainView: View {
         }
     }
     
-    private func formatTime(_ interval: TimeInterval) -> String {
+    private func formatTime(_ interval: TimeInterval, selectedFormat: Int) -> String {
         let totalSeconds = Int(interval)
         
         let days = totalSeconds / 86400
@@ -81,11 +90,24 @@ struct MainView: View {
         let minutes = (totalSeconds % 3600) / 60
         let seconds = totalSeconds % 60
         
-        if days > 0 {
+        switch selectedFormat {
+        case 0:
             return String(format: "%d days, %2dh:%2dmin:%2dsec", days, hours, minutes, seconds)
-        } else {
-            return String(format: "%02d:%02d:%02d", hours, minutes, seconds)
+        case 1:
+            return String(format: "%d days", days)
+        case 2:
+            return String(format: "%d days, %2d hours", days, hours)
+        case 3:
+            return String(format: "%d days, %2d hours, %2d minutes", days, hours, minutes)
+        default:
+            return String(format: "%d days, %2dh:%2dmin:%2dsec", days, hours, minutes, seconds)
         }
+        
+//        if days > 0 {
+//            return String(format: "%d days, %2dh:%2dmin:%2dsec", days, hours, minutes, seconds)
+//        } else {
+//            return String(format: "%02d:%02d:%02d", hours, minutes, seconds)
+//        }
     }
 }
 
