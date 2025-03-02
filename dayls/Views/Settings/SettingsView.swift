@@ -49,14 +49,15 @@ struct SettingsView: View {
                     
                     VStack(spacing: 20) {
                         HStack {
-                            DefaultButton(icon: "paintpalette.fill", title: "Background", action: {})
-                            DefaultButton(icon: "pencil", action: {
+//                            DefaultButton(icon: "paintpalette.fill", title: "Background", action: {})
+                            DefaultButton(icon: "pencil", title: "Edit my profile", action: {
                                 showEditProfileSheet.toggle()
                             })
                         }
-                        DefaultButton(icon: "laptopcomputer", title: "Visit our website", action: {})
+//                        DefaultButton(icon: "laptopcomputer", title: "Visit our website", action: {})
 
                     }
+                    .foregroundStyle(.white)
                     Spacer()
                     
                     VStack(spacing: 15) {
@@ -67,7 +68,7 @@ struct SettingsView: View {
                         Button("Contact Us"){}
                             .bold()
                     }
-                    
+                    .foregroundStyle(.white)
                     Spacer()
                 } // VStack
                 .padding()
@@ -83,6 +84,7 @@ struct SettingsView: View {
                 } label: {
                     Image(systemName: "ellipsis")
                 }
+                .foregroundColor(.white)
             }
             .sheet(isPresented: $showBackgroundColorSelectionSheet) {
                 

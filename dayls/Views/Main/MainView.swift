@@ -49,6 +49,7 @@ struct MainView: View {
                 NavigationLink(destination: SettingsView(profile: profile)) {
                     Image(systemName: "gear")
                 }
+                .foregroundStyle(.white)
             }
         } // NavStack
     }

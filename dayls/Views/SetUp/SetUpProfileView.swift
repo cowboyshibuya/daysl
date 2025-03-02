@@ -77,6 +77,7 @@ struct SetUpProfileView: View {
                     Button("Skip") {
                         showSkipAlert = true
                     }
+                    .foregroundStyle(.secondary)
                 }
                 .alert("Are you sure you want to skip ?", isPresented: $showSkipAlert) {
                     Button("Skip") {
