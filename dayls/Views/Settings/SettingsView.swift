@@ -49,13 +49,10 @@ struct SettingsView: View {
                     
                     VStack(spacing: 20) {
                         HStack {
-//                            DefaultButton(icon: "paintpalette.fill", title: "Background", action: {})
                             DefaultButton(icon: "pencil", title: "Edit my profile", action: {
                                 showEditProfileSheet.toggle()
                             })
                         }
-//                        DefaultButton(icon: "laptopcomputer", title: "Visit our website", action: {})
-
                     }
                     .foregroundStyle(.white)
                     Spacer()
@@ -91,6 +88,7 @@ struct SettingsView: View {
             }
             .sheet(isPresented: $showEditProfileSheet) {
                 EditProfileView(profile: profile)
+                    .presentationDetents([.medium])
             }
             .alert("Reset App", isPresented: $showResetAlert) {
                 Button("Reset", role: .destructive) {
@@ -110,65 +108,7 @@ struct SettingsView: View {
     }
 }
 
-struct EditProfileView: View {
-    @Environment(\.dismiss) private var dismiss
-    @Environment(\.modelContext) private var context
-    let profile: Profile
-    
-    // form properties
-    @State private var name = ""
-    @State private var targetAge: Int = 0
-    @State private var selectedDate = Date()
-    
-    var body: some View {
-        NavigationStack {
-            ZStack {
-                BackgroundView()
-                Color.black.opacity(0.5)
-                    .ignoresSafeArea()
-                
-                VStack(alignment: .leading) {
-                    Text("🙋 Name").font(.headline).foregroundStyle(.secondary)
-                    TextField("Name", text: $name)
-                        .padding()
-                        .glass(cornerRadius: 20)
-                    
-                    Text("🎯 Target Age")
-                        .font(.headline).foregroundStyle(.secondary)
-                    TextField("Target Age", value: $targetAge, format: .number)
-                        .padding()
-                        .glass(cornerRadius: 20)
-                    
-                    Text("🥳 Birthdate").font(.headline).foregroundStyle(.secondary)
-                    HStack {
-                        Spacer()
-                        DatePicker("Birthdate", selection: $selectedDate, in: ...Date(), displayedComponents: .date)
-                            .labelsHidden()
-                            .datePickerStyle(.compact)
-                        Spacer()
-                    }
-                } // VStack
-                .padding()
-            } // ZStack
-            .onAppear {
-                name = profile.name
-                targetAge = profile.targetAge
-                selectedDate = profile.birthdate
-            }
-            .navigationTitle("Edit Information")
-            .toolbar {
-                Button("Done") {
-                    if targetAge > 0 && targetAge > profile.age {
-                        profile.name = name
-                        profile.birthdate = selectedDate
-                        profile.targetAge = targetAge
-                    }
-                    dismiss()
-                }
-            }
-        } // NavStack
-    }
-}
+
 
 
 
