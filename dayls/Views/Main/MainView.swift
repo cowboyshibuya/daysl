@@ -26,21 +26,44 @@ struct MainView: View {
             ZStack {
                 BackgroundView()
                 VStack {
-                    Spacer()
-                    // TODO: SET A FIXED VSTACK FOR GLASS VIEW
-                    Text("Time left before you're \(profile.targetAge) years old:")
-                    Text(formatTime(timeRemaining, selectedFormat: selectedFormat))
-                        .font(.largeTitle)
-                        .monospacedDigit()
-                        .padding(30)
-                        .glass(cornerRadius: 20)
-                        .onTapGesture {
-                            if selectedFormat < 3 {
-                                selectedFormat += 1
-                            } else {
-                                selectedFormat = 0
+                    HStack(spacing: 30) {
+                        ZStack {
+                            VStack {
+                                Text("🥳 Age").foregroundStyle(.secondary)
+                                Text("\(profile.age)y").bold()
                             }
                         }
+                        .frame(width: 100, height: 80)
+                        .glass(cornerRadius: 20)
+                        
+                        ZStack {
+                            VStack {
+                                Text("🎯 Target").foregroundStyle(.secondary)
+                                Text("\(profile.targetAge)y").bold()
+                            }
+                        }
+                        .frame(width: 100, height: 80)
+                        .glass(cornerRadius: 20)
+                    }
+                    Spacer()
+                    Text("⌛").font(.largeTitle)
+                    ZStack {
+                        VStack(spacing: 10) {
+                            Text(formatTime(timeRemaining, selectedFormat: selectedFormat))
+                                .font(.largeTitle)
+                                .monospacedDigit()
+                        }
+                        .padding()
+                    }
+                    .frame(width: 300, height: 150)
+                    .glass(cornerRadius: 20)
+                    .onTapGesture {
+                        if selectedFormat < 4 {
+                            selectedFormat += 1
+                        } else {
+                            selectedFormat = 0
+                        }
+                    }
                     
                     Spacer()
                     footer
@@ -99,6 +122,8 @@ struct MainView: View {
             return String(format: "%d days, %2d hours", days, hours)
         case 3:
             return String(format: "%d days, %2d hours, %2d minutes", days, hours, minutes)
+        case 4:
+            return String(format: "%dd:%2dh:%2dmin", days, hours, minutes)
         default:
             return String(format: "%d days, %2dh:%2dmin:%2dsec", days, hours, minutes, seconds)
         }
