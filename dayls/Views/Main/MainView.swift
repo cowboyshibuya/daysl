@@ -46,17 +46,31 @@ struct MainView: View {
                         .glass(cornerRadius: 20)
                     }
                     Spacer()
-                    Text("⌛").font(.largeTitle)
+                    
                     ZStack {
                         VStack(spacing: 10) {
+                            Text("Time left").bold()
+                                .foregroundStyle(.black.opacity(0.5))
+                                .font(.caption)
+                                .padding(.vertical, 5)
+                                .padding(.horizontal, 8)
+                                .background(Capsule().fill(.white))
+                                .opacity(0.8)
+                            Spacer()
+                            
                             Text(formatTime(timeRemaining, selectedFormat: selectedFormat))
                                 .font(.largeTitle)
                                 .monospacedDigit()
+                            
+                            Spacer()
                         }
                         .padding()
                     }
-                    .frame(width: 300, height: 150)
+                    .frame(minWidth: 250, idealWidth: 250, maxWidth: .infinity)
+                    .frame(minHeight: 300, idealHeight: 400, maxHeight: .infinity)
                     .glass(cornerRadius: 20)
+                    .padding(.top, 40)
+                    .padding()
                     .onTapGesture {
                         if selectedFormat < 4 {
                             selectedFormat += 1
