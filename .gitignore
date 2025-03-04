@@ -1,19 +1,22 @@
-## User settings
-xcuserdata/
 
 # xcode specific files
 DerivedData/
-*.xcworkspace
-*.xcuserdata/
-*.xcuserstate
+xcuserdata/
+DerivedData/
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+*.xcworkspace/xcshareddata/*.xccheckout
+*.xcworkspace/xcshareddata/*.xcscmblueprint
+*.playground/**/timeline.xctimeline
+*.xcplayground
 
 # Build artefacts
-builds/
+Builds/
+.build/
 
 # Package Manager folders
 Pods/
 Carthage/Build/
-.build/
 
 # System Files
 .DS_Store
@@ -26,12 +29,13 @@ Carthage/Build/
 *.dSYM.zip
 *.dSYM
 
-## Playgrounds
-timeline.xctimeline
-playground.xcworkspace
-
 # fastlane
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+# Swift Package Manager
+Packages/
+Package.pins
+Package.resolved

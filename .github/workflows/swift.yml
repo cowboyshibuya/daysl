@@ -23,7 +23,7 @@ jobs:
       uses: fwal/setup-swift@v1
       with:
         swift-version: '5.7'
-    - name: Build
-      run: swift build -v
+    - name: Build Xcode project
+      run: xcodebuild -scheme "YourScheme" -project "YourProject.xcodeproj" -sdk macosx -configuration Release clean build
     - name: Run tests
       run: swift test -v
