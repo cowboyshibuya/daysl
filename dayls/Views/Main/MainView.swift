@@ -19,23 +19,70 @@ struct MainView: View {
     // filter properties
     @AppStorage("displayDates") private var displayDates = true
     
+    @State private var selectedFormat : Int = 0
+    
     var body: some View {
         NavigationStack {
             ZStack {
                 BackgroundView()
                 VStack {
+                    HStack(spacing: 30) {
+                        ZStack {
+                            VStack {
+                                Text("🥳 Age").foregroundStyle(.secondary)
+                                Text("\(profile.age)y").bold()
+                            }
+                        }
+                        .frame(width: 100, height: 80)
+                        .glass(cornerRadius: 20)
+                        
+                        ZStack {
+                            VStack {
+                                Text("🎯 Target").foregroundStyle(.secondary)
+                                Text("\(profile.targetAge)y").bold()
+                            }
+                        }
+                        .frame(width: 100, height: 80)
+                        .glass(cornerRadius: 20)
+                    }
                     Spacer()
                     
-                    Text("Time left before you're \(profile.targetAge) years old:")
-                    Text(formatTime(timeRemaining))
-                        .font(.largeTitle)
-                        .monospacedDigit()
-                        .padding(30)
-                        .glass(cornerRadius: 20)
+                    ZStack {
+                        VStack(spacing: 10) {
+                            Text("Time left").bold()
+                                .foregroundStyle(.black.opacity(0.5))
+                                .font(.caption)
+                                .padding(.vertical, 5)
+                                .padding(.horizontal, 8)
+                                .background(Capsule().fill(.white))
+                                .opacity(0.8)
+                            Spacer()
+                            
+                            Text(formatTime(timeRemaining, selectedFormat: selectedFormat))
+                                .font(.largeTitle)
+                                .monospacedDigit()
+                            
+                            Spacer()
+                        }
+                        .padding()
+                    }
+                    .frame(minWidth: 250, idealWidth: 250, maxWidth: .infinity)
+                    .frame(minHeight: 300, idealHeight: 400, maxHeight: .infinity)
+                    .glass(cornerRadius: 20)
+                    .padding(.top, 40)
+                    .padding()
+                    .onTapGesture {
+                        if selectedFormat < 4 {
+                            selectedFormat += 1
+                        } else {
+                            selectedFormat = 0
+                        }
+                    }
                     
                     Spacer()
                     footer
                 } // VStack
+                .padding()
                 .onAppear {
                     startTimer(to: targetDate)
                 }
@@ -72,7 +119,7 @@ struct MainView: View {
         }
     }
     
-    private func formatTime(_ interval: TimeInterval) -> String {
+    private func formatTime(_ interval: TimeInterval, selectedFormat: Int) -> String {
         let totalSeconds = Int(interval)
         
         let days = totalSeconds / 86400
@@ -80,11 +127,26 @@ struct MainView: View {
         let minutes = (totalSeconds % 3600) / 60
         let seconds = totalSeconds % 60
         
-        if days > 0 {
+        switch selectedFormat {
+        case 0:
             return String(format: "%d days, %2dh:%2dmin:%2dsec", days, hours, minutes, seconds)
-        } else {
-            return String(format: "%02d:%02d:%02d", hours, minutes, seconds)
+        case 1:
+            return String(format: "%d days", days)
+        case 2:
+            return String(format: "%d days, %2d hours", days, hours)
+        case 3:
+            return String(format: "%d days, %2d hours, %2d minutes", days, hours, minutes)
+        case 4:
+            return String(format: "%dd:%2dh:%2dmin", days, hours, minutes)
+        default:
+            return String(format: "%d days, %2dh:%2dmin:%2dsec", days, hours, minutes, seconds)
         }
+        
+//        if days > 0 {
+//            return String(format: "%d days, %2dh:%2dmin:%2dsec", days, hours, minutes, seconds)
+//        } else {
+//            return String(format: "%02d:%02d:%02d", hours, minutes, seconds)
+//        }
     }
 }
 

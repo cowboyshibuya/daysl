@@ -10,21 +10,24 @@
 		03B844E72D63CA5800E27EBE /* dayls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dayls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		03A29E332D6D9D07008D7773 /* Exceptions for "dayls" folder in "dayls" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		0386FDE12D75096C00FF5DF0 /* Exceptions for "dayls" folder in "Compile Sources" phase from "dayls" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 03B844E32D63CA5800E27EBE /* Sources */;
 			membershipExceptions = (
-				Views/Profile/SetUpProfileView.swift,
+				Assets.xcassets,
 			);
-			target = 03B844E62D63CA5800E27EBE /* dayls */;
 		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		03B844E92D63CA5800E27EBE /* dayls */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				03A29E332D6D9D07008D7773 /* Exceptions for "dayls" folder in "dayls" target */,
+
+				0386FDE12D75096C00FF5DF0 /* Exceptions for "dayls" folder in "Compile Sources" phase from "dayls" target */,
 			);
 			path = dayls;
 			sourceTree = "<group>";
