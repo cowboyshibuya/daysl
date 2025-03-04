@@ -21,6 +21,23 @@ Carthage/Build/
 # System Files
 .DS_Store
 
+# xcode specific files
+DerivedData/
+*.xcworkspace
+*.xcuserdata/
+*.xcuserstate
+
+# Build artefacts
+builds/
+
+# Package Manager folders
+Pods/
+Carthage/Build/
+.build/
+
+# System Files
+.DS_Store
+
 ## Obj-C/Swift specific
 *.hmap
 
